@@ -32,5 +32,31 @@ module.exports = {
         });
 
         return response.json(developer);
+    },
+
+    async destroy(request, response){
+        const {github_userName} = request.body;
+        await Dev.deleteOne({github_userName});
+
+        return response.json({message: "deletado com sucesso"});
+    },
+
+    async edit(request, response){
+        const {bio, github_userName, avatar_url, techs, name} = request.body;
+        const arrayTechs = parseStringAsArray(techs);
+
+        developer = await Dev.updateOne({
+            github_userName:{
+                $in:github_userName
+            },
+            avatar_url,
+            bio,
+            techs:arrayTechs,
+            name
+        });
+        return response.json({message: "editado com sucesso"});
     }
 }
+
+
+
