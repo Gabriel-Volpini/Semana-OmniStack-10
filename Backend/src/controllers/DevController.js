@@ -45,15 +45,12 @@ module.exports = {
         const {bio, github_userName, avatar_url, techs, name} = request.body;
         const arrayTechs = parseStringAsArray(techs);
 
-        developer = await Dev.updateOne({
-            github_userName:{
-                $in:github_userName
-            },
+        await Dev.update({github_userName},{$set:{
             avatar_url,
             bio,
             techs:arrayTechs,
             name
-        });
+        }})
         return response.json({message: "editado com sucesso"});
     }
 }
