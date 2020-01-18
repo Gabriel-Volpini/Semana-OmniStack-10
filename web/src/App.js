@@ -3,7 +3,6 @@ import api from "./services/api";
 
 import DevItem from "./components/DeviItem/index";
 import DevForm from "./components/DevForm";
-import IsLoading from "./components/Loading/IsLoading";
 import './global.css';
 import './App.css';
 import "./SideBar.css";
