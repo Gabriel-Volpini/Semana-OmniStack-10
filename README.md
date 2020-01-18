@@ -62,9 +62,9 @@ npm start
 
 ![](/Screenshots/github%20perfil.jpg)
 
-[5] - Cadastro do dev dentro da interface web
+[5] - Cadastro do dev dentro da interface web (video)
 
-![](https://youtu.be/PDi9dq2K4CI)
+https://youtu.be/PDi9dq2K4CI
 
 [6] - Pesquisa de devs baseado na tecnologia
 
