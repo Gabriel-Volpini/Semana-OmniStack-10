@@ -4,6 +4,7 @@ li.dev-item{
     border-radius: 2px; 
     border: 1px solid #66666629;
     padding: 20px;
+    position: relative;
 }
 
 
@@ -32,7 +33,7 @@ li.dev-item p{
 }
 
 li.dev-item a{
-    color:#8e4dff;;
+    color:#8e4dff;
     font-size: 14px;
     text-decoration: none;
 }

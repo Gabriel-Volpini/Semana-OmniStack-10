@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
+import IsLoading from "../Loading/IsLoading"
 
 export default function DevForm({onSubmit}){
 
+    const [load, setLoad] = useState(false);
 
     const [latitude, setLatitude] = useState(``);
     const [longitude, setLongitude] = useState(``);
@@ -33,6 +35,7 @@ export default function DevForm({onSubmit}){
 
         setGithub_username(``);
         setTechs(``);
+        setLoad(false);
     }
 
 
@@ -85,7 +88,8 @@ export default function DevForm({onSubmit}){
               />
             </div>
           </div>
-          <button className="submitButton">Salvar</button>
+          <button onClick={() => setLoad(true)} className="submitButton">Salvar</button>
+          <IsLoading sppinig={load}/>
         </form>
     )
 }

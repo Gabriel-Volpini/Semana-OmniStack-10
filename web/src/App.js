@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import api from "./services/api";
 
-import DevItem from "./components/DeviItem/index"
-import DevForm from "./components/DevForm"
+import DevItem from "./components/DeviItem/index";
+import DevForm from "./components/DevForm";
+import IsLoading from "./components/Loading/IsLoading";
 import './global.css';
 import './App.css';
 import "./SideBar.css";
@@ -29,15 +30,17 @@ function App() {
   }
 
   return (
-    <div id ="App">
-      <aside>
-        <strong>Cadastrar</strong>
-        <DevForm onSumbit={handleAddDev}/>
-      </aside>
-      <main>
-        <ul>{ devs.map(dev => ( <DevItem key={dev._id} dev={dev}/> )) }</ul>
-      </main>
-    </div>
+    <>
+      <div id ="App">
+        <aside>
+          <strong>Cadastrar</strong>
+          <DevForm onSubmit={handleAddDev}/>
+        </aside>
+        <main>
+          <ul>{ devs.map(dev => ( <DevItem key={dev._id} dev={dev}/> )) }</ul>
+        </main>
+      </div>
+    </>
   );
 }
 

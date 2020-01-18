@@ -6,6 +6,7 @@ main ul {
      grid-template-columns: repeat(2,1fr);
      gap: 20px;
      list-style: none;
+     position: relative;
 }
 
 @media (max-width: 650px) {
