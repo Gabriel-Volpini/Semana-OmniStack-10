@@ -46,6 +46,26 @@ npm start
 
 ## Vizualizacao
 
- ![](/Screenshots/empty-map.jpg)
+[1] - App sem devs
 
+![](/Screenshots/empty%20map.jpg)
+ 
+[2] - Vizualizacao dos devs no mapa
 
+![](/Screenshots/devs%20at%20the%20map.jpg)
+
+[3] - Popup de informacao sobre o dev
+
+![](/Screenshots/Dev%20popup.jpg)
+
+[4] - Vizualizacao do Github do dev em navegador dentro do app
+
+![](/Screenshots/github%20perfil.jpg)
+
+[5] - Cadastro do dev dentro da interface web
+
+![](/Screenshots/Insert%20new%20user.mp4)
+
+[6] - Pesquisa de devs baseado na tecnologia
+
+![](/Screenshots/search%20by%20tech.jpg | width=266)
