@@ -46,6 +46,6 @@ npm start
 
 ## Vizualizacao
 
-![Dev's at the map](https://user-images.githubusercontent.com/53948365/72670882-b4ceb980-3a21-11ea-9c18-845a1bc9530d.jpeg)
+ ![](/Screenshots/empty-map.jpg)
 
 
