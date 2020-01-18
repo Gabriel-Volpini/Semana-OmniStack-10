@@ -68,4 +68,4 @@ npm start
 
 [6] - Pesquisa de devs baseado na tecnologia
 
-![](/Screenshots/search%20by%20tech.jpg | width=266)
+![](/Screenshots/search%20by%20tech.jpg)
