@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://deds:d@cluster0-wazua.gcp.mongodb.net/week10?ret
 
 app.use(cors());
 app.use(express.json());
-app.use(routes);
+app.use(routes);                  
 
 app.listen(3333);
 
